@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.danger{
+    color: red;
+    text-align: center;
+}
+
+/* modal window */
+
+
+.modal-window{
+    width: 100%;
+    background-color: rgba(19, 18, 18, 0.897);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(6px);
+    z-index: 999;
+    transition: all 0.1s ease;
+}
+
+
+.modal-content{
+    width: 500px;
+    background-color: #fff;
+    height: 300px;
+    position: relative;
+}
+
+.close{
+    background-color: red;
+    color: #fff;
+    padding: 7px 15px;
+    border: 2px solid red;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 7px;
+}
+.close:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid red;
+    color: red;
+}
+.modal-img{
+    width: 70%;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.hide{
+    transform: translateY(-200%);
+}
+
+/* Header start */
+
+.header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: teal;
+    color: #fff;
+}
+
+.logo{
+    text-transform: uppercase;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.inputSearch{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+}
+
+.btn{
+    padding: 10px 17px;
+    border: 1px solid teal;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: teal;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Header end */
+
+
+
+
+/* main start */
+
+section{
+    width: 100%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    margin: 1.5rem auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 20px;
+}
+.card h2 , .card h4{
+    text-align: center;
+    margin: 15px 0;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card_img{
+    width: 100%;
+}
+
+.loader {
+    width: 48px;
+    margin: 0 auto;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    left: 5rem;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';
+    width: 48px;
+    height: 48px;
+    border: 2px solid #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    animation: rotation 2s ease-in-out infinite;
+  }
+  .loader::after {
+    border-color: #FF3D00;
+    animation-delay: 1s;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+
+/* main end */
+
+
+
+
+
+
+@media only screen and (max-width:992px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container{
+        width: 700px;
+        margin: 0 auto;
+    }
+    .danger{
+        color: red;
+        text-align: center;
+    }
+    
+    /* modal window */
+    
+    
+    .modal-window{
+        width: 100%;
+        background-color: rgba(19, 18, 18, 0.897);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        backdrop-filter: blur(6px);
+        z-index: 999;
+        transition: all 0.1s ease;
+    }
+    
+    
+    .modal-content{
+        width: 400px;
+        background-color: #fff;
+        height: 200px;
+        position: relative;
+    }
+    
+    .close{
+        background-color: red;
+        color: #fff;
+        padding: 7px 15px;
+        border: 2px solid red;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        border-radius: 7px;
+    }
+    .close:hover{
+        cursor: pointer;
+        background-color: #fff;
+        border: 2px solid red;
+        color: red;
+    }
+    .modal-img{
+        width: 70%;
+        margin: 0 auto;
+        background-color: red;
+    }
+    
+    .hide{
+        transform: translateY(-200%);
+    }
+    
+    /* Header start */
+    
+    .header{
+        width: 100%;
+        margin: 0 auto;
+        background-color: teal;
+        color: #fff;
+    }
+    
+    .logo{
+        text-transform: uppercase;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .inputSearch{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 7px;
+    }
+    
+    .btn{
+        padding: 10px 17px;
+        border: 1px solid teal;
+        border-radius: 7px;
+        transition: all 0.3s ease;
+    }
+    
+    .btn:hover{
+        cursor: pointer;
+        background-color: teal;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    
+    /* Header end */
+    
+    
+    
+    
+    /* main start */
+    
+    section{
+        width: 100%;
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .card{
+        margin: 1.5rem auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        padding: 20px;
+    }
+    .card h2 , .card h4{
+        text-align: center;
+        margin: 15px 0;
+    }
+    .card:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    
+    .card_img{
+        width: 100%;
+    }
+    
+    .loader {
+        width: 48px;
+        margin: 0 auto;
+        height: 48px;
+        display: inline-block;
+        position: relative;
+        left: 5rem;
+      }
+      .loader::after,
+      .loader::before {
+        content: '';
+        width: 48px;
+        height: 48px;
+        border: 2px solid #000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        animation: rotation 2s ease-in-out infinite;
+      }
+      .loader::after {
+        border-color: #FF3D00;
+        animation-delay: 1s;
+      }
+      
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      } 
+    
+    
+    
+    /* main end */
+    
+}
+
+@media only screen and (max-width:576px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .danger{
+        color: red;
+        text-align: center;
+    }
+    
+    /* modal window */
+    
+    
+    .modal-window{
+        width: 100%;
+        background-color: rgba(19, 18, 18, 0.897);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        backdrop-filter: blur(6px);
+        z-index: 999;
+        transition: all 0.1s ease;
+    }
+    
+    
+    .modal-content{
+        width: 200px;
+        background-color: #fff;
+        height: 150px;
+        position: relative;
+    }
+    
+    .close{
+        background-color: red;
+        color: #fff;
+        padding: 5px 8px;
+        border: 2px solid red;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        border-radius: 7px;
+    }
+    .close:hover{
+        cursor: pointer;
+        background-color: #fff;
+        border: 2px solid red;
+        color: red;
+    }
+    .modal-img{
+        width: 70%;
+        margin: 0 auto;
+        background-color: red;
+    }
+    
+    .hide{
+        transform: translateY(-200%);
+    }
+    
+    /* Header start */
+    
+    .header{
+        width: 100%;
+        margin: 0 auto;
+        background-color: teal;
+        color: #fff;
+    }
+    
+    .logo{
+        display: block;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    nav{
+        display: block;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .inputSearch{
+        padding: 5px 10px;
+        border: none;
+        border-radius: 7px;
+        margin-left: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .btn{
+        padding: 10px 17px;
+        border: 1px solid teal;
+        border-radius: 7px;
+        transition: all 0.3s ease;
+        margin-left: 5.5rem;
+    }
+    
+    .btn:hover{
+        cursor: pointer;
+        background-color: teal;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    
+    /* Header end */
+    
+    
+    
+    
+    /* main start */
+    
+    section{
+        width: 100%;
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .card{
+        margin: 1.5rem auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        padding: 20px;
+    }
+    .card h2 , .card h4{
+        text-align: center;
+        margin: 15px 0;
+    }
+    .card:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    
+    .card_img{
+        width: 100%;
+    }
+    
+    .loader {
+        width: 48px;
+        margin: 0 auto;
+        height: 48px;
+        display: inline-block;
+        position: relative;
+        left: 5rem;
+      }
+      .loader::after,
+      .loader::before {
+        content: '';
+        width: 48px;
+        height: 48px;
+        border: 2px solid #000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        animation: rotation 2s ease-in-out infinite;
+      }
+      .loader::after {
+        border-color: #FF3D00;
+        animation-delay: 1s;
+      }
+      
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      } 
+    
+    
+    
+    /* main end */
+    
+}
